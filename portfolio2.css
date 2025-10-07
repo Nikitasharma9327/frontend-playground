@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #141414;
+    color: #fff;
+    padding-top: 70px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/* Header Section  */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0 20px;
+}
+
+.left {
+    font-size: 2rem;
+    color: #e50914;
+    letter-spacing: 2px;
+    transition: font-size 0.3s ease;
+}
+
+nav .left:hover {
+    font-size: 2.1rem;
+}
+
+.right ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3 ease;
+
+}
+
+nav ul a:hover {
+    color: #E50914;
+    font-size: 1.1rem;
+}
+
+
+/* Home page  */
+.home {
+    display: flex;
+    justify-content: space-between;
+}
+
+.firstsection {
+    font-size: 30px;
+    margin: 80px auto 0 50px;
+
+}
+
+.firstsection h1 {
+    margin-top: 20px;
+    font-size: 90px;
+    color: #e50914;
+}
+
+.firstsection h3 {
+    font-size: 60px;
+}
+
+.buttons .btn {
+    padding: 1em 1em;
+    background-color: transparent;
+    font-size: 1em;
+    color: #e50914;
+    border: 1px solid #e50914;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 3px 3px #232323;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+
+.btn:hover {
+    background-color: #e50914;
+    color: white;
+    box-shadow: 0 0 15px #e50914;
+}
+
+.assest {
+    margin-top: 80px;
+    margin-right: 20px;
+    margin-left: 10px;
+
+}
+
+.assest img {
+    margin-right: 40px;
+    height: 55vh;
+    width: 25vw;
+
+}
+
+/* Horizontal line  */
+hr {
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 14vh 3vw;
+}
+
+
+/* Project Section  */
+.project-section {
+    margin-top: 40px;
+    padding: 0 50px 60px 75px;
+}
+
+.project-section h2 {
+    font-size: 1.8rem;
+    margin: 30px 0px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
+
+.row {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #e50914 transparent;
+    scroll-behavior: smooth;
+    gap: 15px;
+    height: 450px;
+    margin-top: 0.7rem;
+}
+
+.card {
+    min-width: 350px;
+    max-width: 200px;
+    border-radius: 5px;
+    background-color: #222;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    flex-shrink: 0;
+}
+
+.card .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(20, 20, 20, 0.85) 30%, transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(229, 9, 20, 0.9);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card .title {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.85);
+    user-select: none;
+}
+
+.card img {
+    height: 240px;
+    width: 350px;
+    object-fit: cover;
+    display: block;
+    justify-content: center;
+}
+
+
+/* Skill Section  */
+.skill-section {
+    padding: 0px 5vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-section h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #e50914;
+}
+
+.skill-section .tool {
+    color: #ccc;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero {
+    flex: 1 1 150px;
+    max-width: 180px;
+    height: 120px;
+    background-color: #1f1f1f;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.hero:hover {
+    transform: scale(1.05);
+    background-color: #222;
+}
+
+.hero img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+
+/* Footer Section  */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 5vw;
+    justify-content: space-evenly;
+    background-color: #141414;
+    gap: 40px;
+}
+
+.contact-first {
+    flex: 1 1 300px;
+
+}
+
+.contact .contact-first h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #e50914;
+}
+
+.contact-first p {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.contact-fourth {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
+.contact-fourth {
+    display: flex;
+    gap: 30px;
+
+}
+
+.contact-fourth i {
+    cursor: pointer;
+    color: #ccc;
+    /* height: 20px; */
+    /* width: 20px; */
+    transition: color 0.3s ease;
+
+}
+
+.contact-fourth i:hover {
+    color: #e50914;
+}
+
+.contact-second {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-second h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #e50914;
+}
+
+.contact-second input,
+.contact-second textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+.contact-second textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-second button {
+    padding: 10px;
+    background-color: #232323;
+    color: beige;
+    border: 2px solid beige;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-second button:hover {
+    background-color: #e50914;
+    color: white;
+    box-shadow: 0 0 10px #e50914;
+}
+
+.contact-second a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Bottom contact */
+footer {
+    text-align: center;
+    color: #e50914;
+    font-size: 1.2rem;
+    background-color: #141414;
+}

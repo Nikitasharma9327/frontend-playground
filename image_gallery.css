@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Tagesschrift&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #111;
+}
+.header{
+    padding: 10px;
+    text-align: center;
+    font-weight: 100px;
+}
+.header h1{
+    font-family: Sacramento;
+    font-size: 50px;
+   color: white;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 100px 100px 100px;
+}
+
+.column{
+    flex: 25%;
+    max-width: 25%;
+}
+.img-zoom{
+    height: auto;
+    overflow: hidden;
+    /* gap: 50px; */
+    border: 1px solid #111;
+    border-radius: 30px;
+}
+.img-zoom img{
+    vertical-align: middle;
+    height: 200px;
+    width: auto;
+    border: 0;
+    transition: transform .5s esae;
+}
+.img-zoom:hover img{
+    transform: scale(1.5)
+}
+@media screen and (max-width: 800px){
+    .column{
+        background-color: lightpink;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 500px){
+    .column{
+        background-color: #111;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+@media screen {
+    
+}

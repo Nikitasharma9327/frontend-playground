@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Segoe UI', cursive, sans-serif;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 50vw;
+    max-width: 90%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #de1746;
+    margin-bottom: 20px;
+}
+
+
+.input-item {
+    flex: 1;
+    margin-left: 13px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: 2px solid #ffb6b9;
+    font-size: 16px;
+    outline: none;
+    width: 30vw;
+}
+
+.btn {
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    margin-left: 30px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f95e7d;
+}
+
+#list-container {
+    list-style: none;
+    padding: 0;
+}
+
+#list-container li {
+    background-color: #ffe0f0;
+    color: #333;
+    padding: 10px 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.2s;
+}
+#list-container li button{
+    margin-left: 100px;
+}
+
+#list-container li:hover {
+    transform: scale(1.02);
+    background-color: #ffd1e8;
+}
+.done {
+    text-decoration: line-through;  /* strikes through text */
+    color: gray;                     /* optional: makes text gray */
+}
+
+/* Optional: delete button inside each item (if you add it in JS later) */
+/* #list-container li::after {
+    content: '✖';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff4e72;
+    cursor: pointer;
+    font-size: 14px;
+} */
+
+
